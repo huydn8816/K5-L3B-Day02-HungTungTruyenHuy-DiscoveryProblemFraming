@@ -145,16 +145,16 @@ HIỆN TẠI — 77 phút/lần đồng bộ
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Trình bày bản pitch Problem Card #1 trong 90 giây: Bài toán quá tải kiến thức khi đọc bài giảng 80 slide, đề xuất giải pháp 1 người giảng bài cô đọng kết hợp câu hỏi gợi mở đào sâu và Cheat Sheet 1 trang. | Nhóm nắm được bản chất nỗi đau học tập và đưa vào danh sách rút gọn để cân nhắc ở bước gom cụm. |
+| Phản biện bài của bạn khác | **Câu hỏi tôi đã đặt cho Huy (đề tài Agent Vingroup):** *"Nếu Agent tự động thực hiện nhiều bước xuyên app, làm sao kiểm soát rủi ro AI tự ý trừ tiền đặt xe khi người dùng chưa đồng ý, hoặc lỡ AI hiểu nhầm lệnh giọng nói mà mở khóa cửa thông minh (Smart Lock) gây mất an toàn nhà ở?"*<br>**Câu hỏi tôi đã đặt cho Tùng (đề tài lọc JD/CV):** *"Mỗi công ty viết JD một kiểu và yêu cầu kỹ năng quá rộng, làm sao chuẩn hóa tiêu chí để biết kỹ năng nào là bắt buộc (Must-have) và kỹ năng nào chỉ là điểm cộng (Nice-to-have)?"* | Huy đã tiếp thu và bổ sung bước Financial Gate (bắt buộc người dùng xác nhận tiền mới gọi xe) cùng rào chắn an toàn (Boundary loại trừ Smart Lock); Tùng đã bổ sung phân loại kỹ năng cốt lõi và kỹ năng bổ trợ vào quy trình. |
+| Nhận phản biện | **Câu hỏi tôi nhận được từ nhóm:** *"Slide bài giảng AI có nhiều công thức toán và sơ đồ mạng phức tạp, nếu chỉ nghe audio thì làm sao người học nắm được chi tiết kỹ thuật để làm bài lab?"*<br>**Tôi đã sửa gì:** Tôi làm rõ giới hạn của âm thanh và bổ sung cơ chế ghép đôi: Audio chỉ giải thích trực giác bản chất, phần toán và sơ đồ phức tạp được tóm lược tổng quan kèm câu hỏi gợi mở, đồng thời đính kèm "Cheat Sheet 1 trang" chứa sơ đồ và công thức để học viên mở ra xem khi ngồi vào bàn học. | Bảo vệ được tính khả thi của Problem Card #1 và giúp nhóm hiểu rõ ranh giới khi ứng dụng AI vào học tập kỹ thuật. |
+| Gom cluster / cây OST | Thảo luận và chỉ ra điểm tương đồng giữa bài của tôi (đọc slide dài) và bài của Tùng (đọc paper ngoại ngữ dài) để gom thành cụm *"Quá tải thông tin khi đọc tài liệu học tập dài trước buổi học"*; cùng nhóm gạch bỏ các giải pháp trá hình trong cây OST. | Giúp nhóm phân định rạch ròi giữa Nỗi đau (Opportunity) và Giải pháp (Solution) trong cây OST. |
+| Chọn candidate problem | Tham gia chấm điểm 3 candidate theo 7 tiêu chí trong bảng 2.4; đồng thuận chọn đề tài Agent Vingroup của Huy vì có hệ sinh thái đa dịch vụ rộng lớn và tính thực tế cao; nhận trách nhiệm phụ trách chính CP5. | Nhóm thống nhất 100% về bài toán chung mà không có bất đồng kéo dài; phân công công việc rõ ràng. |
+| Kiểm chứng / research | Cung cấp góc nhìn về trải nghiệm cư dân và sinh viên khi di chuyển trong khuôn viên lớn; hỗ trợ rà soát đối thủ (Google Assistant, Apple Shortcuts) để chỉ ra khoảng trống về dữ liệu nội khu. | Củng cố luận điểm cho bảng Research ở Mục 3.3. |
+| Quy trình nhóm | Thiết kế toàn bộ sơ đồ quy trình Hiện tại (6 bước) & Tương lai (Mục 4), phân định các tầng Rule (API WinMart, BQL), AI (bóc tách ý định) và HITL (Financial Gate); tích hợp 2 vòng lặp phản hồi (làm rõ ASR và đổi ý lộ trình). | Hoàn thiện Mục 4 trong `group_report.md` với sơ đồ Mermaid `flowchart LR` chuẩn xác, bảng Before/After chứng minh giảm 95% thời gian thao tác. |
+| Problem Statement | Soạn thảo Problem Statement v0 gồm 6 trường chuẩn (Mục 5), xác định Success Metric đo lường qua 10 chuyến xe thử nghiệm nội khu; thiết lập 3 boundary an toàn và bảo vệ phản biện kỹ thuật. | Hoàn thiện Mục 5 trong `group_report.md`, giải quyết dứt điểm các băn khoăn về rào cản API và cước phí chờ. |
+| Mức can thiệp AI | Phản biện luận điểm lựa chọn mức can thiệp: Khẳng định nếu chỉ bật điều hòa thì Rule là đủ, nhưng vì bài toán đòi hỏi hiểu câu lệnh tự nhiên đa điều kiện, tối ưu lộ trình ghé siêu thị và xử lý dữ liệu cổng thi công thời gian thực nên bắt buộc cần mức Agent. | Đóng góp lập luận cốt lõi cho câu hỏi *"Vì sao không chọn mức đơn giản hơn"* ở Mục 6.2. |
+| Quyết định | Tham gia đánh giá 4 loại rủi ro (Value, Usability, Feasibility, Viability); đề xuất ngưỡng dừng (Kill-switch) đo lường cụ thể cho dự án pilot. | Nhóm đồng thuận ra quyết định Go với phạm vi thử nghiệm hẹp tại VinUni / Vinhomes Ocean Park. |
 
 ---
 
@@ -164,10 +164,10 @@ HIỆN TẠI — 77 phút/lần đồng bộ
 |---|---|---|---|---|
 | CP1 Scan | Tìm kiếm và mở rộng góc nhìn về các vấn đề thường gặp trong học tập kỹ thuật theo 4 lăng kính. | Gợi ý bối cảnh thực tế về sự cố xung đột môi trường/thư viện (CUDA, dependencies) và xung đột Git khi làm việc nhóm. | AI bị quán tính "solution-first", đưa ra các giải pháp trá hình gắn mác problem (như *"cần chatbot tóm tắt bài giảng"*, *"thiếu tool tự chia việc"*). Nếu chép vào sẽ vi phạm quy chế và bị trừ điểm nặng theo rubric C1. | Loại bỏ toàn bộ các từ khóa giải pháp; tự viết lại 100% theo đúng cú pháp Job Story (*Khi... tôi muốn... để...*); gán các con số đo lường thực tế từ trải nghiệm thật của bản thân (190 phút đọc slide, 60–90 phút tranh luận chia việc). |
 | CP2 Problem Card | Đóng vai "PM hoài nghi" để bóc tách lỗ hổng logic của Problem Card #1 trước khi mang đi pitch với nhóm. | Chỉ ra rất đúng ranh giới của âm thanh: Audio không thể giải thích được công thức toán KaTeX và code; cảnh báo metric "tỷ lệ nhớ $\ge 80\%$" là bất khả thi để đo đạc khách quan trong ngắn hạn. | AI hời hợt khi rập khuôn gợi ý mô hình podcast 2 người nói chuyện (giống NotebookLM) mà không nhận ra nó làm loãng mật độ kiến thức và tốn thời gian vô ích với tài liệu học thuật kỹ thuật. | Bác bỏ mô hình 2 người; tự định hình cấu trúc 1 người giảng bài cô đọng kết hợp câu hỏi gợi mở đào sâu; thiết kế thêm Cheat Sheet 1 trang đi kèm để bù đắp điểm mù thị giác của audio; quy đổi cách đo metric sang bài mini-quiz 5 câu kiểm tra trước giờ học. |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP4 Research | Tra cứu các giải pháp trợ lý giọng nói trên xe điện và nền tảng điều phối đa dịch vụ. | Tìm kiếm thông tin về Google Assistant, Apple Shortcuts và các tính năng trợ lý ảo trên xe VinFast. | AI có xu hướng tổng hợp chung chung về tính năng trợ lý ảo toàn cầu mà bỏ qua ngữ cảnh bản địa tại Việt Nam. | Bổ sung phân tích về khoảng trống dữ liệu vi mô nội khu (micro-routing) và tính khép kín của hệ sinh thái Vingroup. |
+| CP5 Quy trình | Chuyển đổi ý tưởng quy trình sang cú pháp sơ đồ Mermaid và bảng Before/After. | Hỗ trợ sinh nhanh cú pháp Mermaid rendering bằng elk và phân tầng Rule/AI/HITL. | Ban đầu AI chỉ đề xuất luồng đơn giản (về nhà bật điều hòa) thiếu tính thực tế và dễ bị coi là macro đơn giản. | Tự đưa vào bối cảnh thực tế: Lộ trình đa chặng ghé WinMart mua đồ giảm giá và bài toán giải quyết điểm mù thi công nội khu VinUni / Ocean Park. |
+| CP5–6 Problem Statement | Soạn thảo 6 trường của Problem Statement v0 và phản biện tính khả thi của Boundary. | Gợi ý cấu trúc 6 trường theo chuẩn Lean UX & Google PAIR. | Boundary ban đầu AI gợi ý chưa chặt về mặt giao dịch tiền bạc và an toàn cổng trường. | Thiết lập Financial Gate bắt buộc con người xác nhận trước khi gọi xe và giới hạn AI chỉ định tuyến vào các cổng đã được BQL xác nhận an toàn. |
+| CP6 Mức can thiệp / quyết định | Tham khảo các tiêu chí phân định Rule, Workflow, Agent và 4 loại rủi ro của Marty Cagan. | Cung cấp khung ma trận độ mơ hồ × độ phức tạp và cấu trúc AI Canvas chuẩn mực. | AI dễ đưa ra kết luận vội vàng khuyên chọn Agent toàn năng mà không xét kỹ chi phí và rủi ro trễ mạng API. | Nhấn mạnh việc chỉ chọn Agent cho khâu lập kế hoạch đa bước và xử lý ngữ cảnh động, còn các lệnh thiết bị và gọi xe cụ thể vẫn neo chặt vào Rule và xác nhận con người (HITL). |
 
 ---
 
@@ -177,20 +177,41 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
+Khi lắng nghe top 3 problems của các bạn trong nhóm, tôi nhận thấy sự phân mảnh thông tin và gánh nặng đọc hiểu là nỗi đau phổ biến ở nhiều hoàn cảnh khác nhau. Bạn Tùng gặp vấn đề khi phải đọc các paper nghiên cứu và tài liệu ngoại ngữ dài 15–20 trang trước buổi học mất tới 1–2 tiếng, điều này có cùng bản chất với nỗi đau đọc slide bài giảng 80 trang của tôi. Trong khi đó, bài toán của bạn Huy về Agent giọng nói trong hệ sinh thái Vingroup mở ra góc nhìn rộng lớn hơn về việc kết nối các dịch vụ rời rạc (Green SM, Vinhomes Smart Home, WinMart) để giải phóng thời gian cho người dùng bận rộn hoặc đang lái xe. Tôi học được rằng một vấn đề có giá trị cao không nhất thiết phải là bài toán kỹ thuật hàn lâm phức tạp, mà là bài toán chạm đúng vào các bước nghẽn gây lãng phí thời gian hàng ngày của người dùng.
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+Nhóm tôi đã bị cuốn vào tư duy "solution-first" ngay từ đầu buổi làm việc. Cả nhóm lập tức bàn luận về việc "xây dựng chatbot thông minh", "làm tool audio tự động" hay "tạo app gọi xe tích hợp trợ lý ảo". Chúng tôi nhận ra mình đang phạm luật khi đối chiếu lại với rubric và worksheet của môn học: chưa hề có dữ liệu về việc người dùng thực tế đang mất bao nhiêu phút và kẹt ở bước nào. Nhóm đã xử lý bằng cách dừng toàn bộ việc thảo luận về tính năng AI, cùng nhau phân rã quy trình hiện tại thành 6 bước thủ công, gắn số phút đo đạc thực tế cho từng bước. Nhờ đó, nhóm mới vỡ lẽ ra rằng bottleneck thực sự nằm ở việc chuyển đổi app và điểm mù thông tin công trường thi công nội khu, chứ không phải người dùng thiếu một giao diện chat.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
+Tôi đã có hai lần đổi ý rất quan trọng trong buổi làm việc hôm nay:
+1. *Ở bài cá nhân:* Ban đầu tôi định làm mô hình podcast 2 người đàm thoại giống NotebookLM. Nhưng sau khi nghe phản biện rằng format đối thoại 2 người có nhiều câu thoại xã giao rườm rà, làm loãng mật độ kiến thức của một bài giảng chuyên ngành, tôi đã đổi ý hoàn toàn sang mô hình 1 người giảng bài cô đọng (độc thoại sư phạm) kết hợp chèn các câu hỏi gợi mở đào sâu và đính kèm Cheat Sheet 1 trang để mắt nhìn song song.
+2. *Ở bài nhóm:* Ban đầu kịch bản của Huy khá đơn giản, chỉ là câu lệnh "về nhà bật điều hòa và đặt xe". Tôi đã phản biện rằng bài toán này quá giống một macro/shortcut đơn giản của Google Assistant hay Siri và chưa đủ sức thuyết phục để cần đến Agent. Tôi đã đề xuất nâng tầm kịch bản thành bài toán thực tế: Lộ trình đa chặng ghé WinMart mua đồ giảm giá và xử lý điểm mù thi công cổng trường VinUni. Cả nhóm đã đồng thuận với đề xuất này và cập nhật lại toàn bộ quy trình CP5.
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
+Điều làm tôi bất ngờ nhất khi đối chiếu nghiên cứu là việc ngay cả các gã khổng lồ công nghệ như Google Maps hay Apple Shortcuts đều hoàn toàn "mù" trước dữ liệu vi mô nội khu (micro-routing) của một khuôn viên lớn như VinUni hay Vinhomes Ocean Park. Một chiếc xe công nghệ không thể biết được cổng nào của trường đang bị rào chắn sửa chữa, dẫn đến việc tài xế thả khách cách xa cả cây số hoặc chạy lòng vòng gọi điện cãi nhau. Điều này chứng minh rằng việc kết hợp dữ liệu Ban Quản Lý nội bộ với Agent giọng nói không phải là một ý tưởng viển vông mà là một nhu cầu thực tế chưa có ai giải quyết trọn vẹn.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+Điều khó nhất khi viết Problem Statement là việc phân định rạch ròi giữa Nỗi đau và Giải pháp, đồng thời thiết lập các rào chắn an toàn (Boundary) chặt chẽ. Rất khó để không buột miệng đưa chữ "AI", "Agent" hay "tự động hóa" vào phần mô tả vấn đề. Ngoài ra, việc thiết lập Boundary đòi hỏi phải tư duy thực tế về các rủi ro nguy hiểm: tuyệt đối cấm AI tự động trừ tiền đặt xe nếu người dùng chưa xác nhận rõ ràng (Financial Gate), và tuyệt đối cấm AI can thiệp vào khóa cửa thông minh (Smart Lock) hay camera an ninh.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
+Nếu có cơ hội làm lại từ đầu, tôi sẽ phản biện nhóm mạnh hơn ngay từ bước CP3 về tính khả thi kỹ thuật (Feasibility) của việc xin cấp quyền truy cập API dữ liệu thời gian thực từ Ban Quản Lý khu đô thị/trường học. Trong thực tế, các đơn vị vận hành thường rất chậm chạp trong việc mở API nội bộ. Do đó, việc xây dựng cơ chế cập nhật bán thủ công từ thông báo hàng ngày của BQL hoặc cho phép cộng đồng tài xế báo lỗi (crowdsourced) cần được đặt ra ngay từ đầu như một phương án cứu cánh bắt buộc, thay vì giả định rằng API luôn sẵn sàng.
+
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+Bài toán của nhóm xuất phát từ vấn đề người dùng mất từ 18 đến 28 phút để thao tác qua lại giữa 6 ứng dụng khác nhau và thường xuyên bị tài xế thả nhầm sảnh do công trường thi công nội khu. Quy trình mới giải quyết bằng cách nhận diện giọng nói, bóc tách câu lệnh đa điều kiện để tự động gửi lệnh ngầm bật điều hòa phòng khách 24°C, đồng thời tra cứu dữ liệu cổng trường thông thoáng và yêu cầu người dùng xác nhận cước phí trước khi chính thức gọi xe Green SM. Chỉ số đo lường thành công thực tế là rút ngắn thời gian thao tác xuống dưới 30 giây, kéo tỷ lệ tài xế gọi điện lạc đường xuống dưới 5% và đạt tỷ lệ bật điều hòa thành công từ 95% trở lên. Ranh giới an toàn được chốt cứng: AI không bao giờ được tự ý trừ tiền đặt xe khi người dùng chưa đồng ý, và tuyệt đối không được cấp quyền điều khiển khóa cửa thông minh. Nhóm chọn mức can thiệp Agent vì bài toán đòi hỏi tự động lập kế hoạch đa bước và xử lý linh hoạt dữ liệu động thời gian thực từ nhiều bên, điều mà các quy tắc tĩnh hay workflow cố định không thể đáp ứng. Quyết định cuối cùng là triển khai thử nghiệm hẹp tại khu vực VinUni và Vinhomes Ocean Park kèm ngưỡng dừng rõ ràng: nếu sau 2 tuần mà tỷ lệ tài xế gọi điện hỏi đường vẫn vượt quá 20% thì tạm dừng dự án để chuẩn hóa lại dữ liệu bản đồ nội khu.
 
 ---
 
 ## 7. Tài liệu tham khảo
 
--
+- Jeff Gothelf & Josh Seiden, *Lean UX: Designing Great Products with Agile Teams*, O'Reilly Media.
+- Rob Fitzpatrick, *The Mom Test: How to talk to customers & learn if your business is a good idea when everyone is lying to you*.
+- Google PAIR (People + AI Research), *People + AI Guidebook*, pair.withgoogle.com.
+- Anthropic, *Building Effective Agents*, anthropic.com/research/building-effective-agents.
+- Marty Cagan, *Inspired: How to Create Tech Products Customers Love*, Silicon Valley Product Group (SVPG).
+- Teresa Torres, *Continuous Discovery Habits: Discover Products that Create Customer Value and Business Value*.
