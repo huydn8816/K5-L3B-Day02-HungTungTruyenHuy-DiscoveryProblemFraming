@@ -143,16 +143,16 @@ HIỆN TẠI — Khoảng 20 phút trước hạn nộp
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| **Pitch Problem Card** | Trình bày 3 candidate: #4 Đối chiếu CV với JD AI Fresher, #5 Đọc paper tiếng Anh dài, #6 Soát quy cách nộp bài lab. Pitch chính Card #4. | Nhóm đưa #4 và #5 vào danh sách rút gọn để chấm điểm; riêng #6 được nhóm chỉ ra là chỉ cần viết script kiểm tra (Rule) là đủ nên phạm vi dùng AI hẹp. |
+| **Phản biện bài của bạn khác** | **Câu hỏi tôi đã đặt:**<br>1. *Hỏi Huy (#1 - Agent Vingroup):* "Nếu các app Vin chưa mở API ra ngoài thì agent gọi lệnh bằng cách nào? Làm sao kiểm soát việc AI tự ý trừ tiền đặt xe khi người dùng chưa duyệt?"<br>2. *Hỏi Hùng (#10 - Ôn bài giảng slide dài):* "So với Audio Overview của NotebookLM, bản nghe của nhóm giúp học viên nhớ công thức và sơ đồ kỹ thuật tốt hơn ở điểm nào?" | Giúp nhóm thống nhất ở CP4 phải có chốt chặn xác nhận tiền (HITL - Financial Gate). |
+| **Nhận phản biện** | **Câu hỏi tôi nhận được:**<br>1. *Hùng hỏi (#4 - CV vs JD):* "Mỗi công ty viết JD một kiểu và yêu cầu rất rộng, làm sao biết kỹ năng nào là bắt buộc (Must-have) và kỹ năng nào chỉ là điểm cộng (Nice-to-have)?"2. *Huy hỏi (#6 - Soát bài lab):* "So với kiểm tra tự động bằng GitHub Classroom, công cụ của nhóm phát hiện thêm được lỗi nào?"<br>Tôi đã sửa:<br>- Với #4: Bổ sung bước phân loại kỹ năng (Must-have vs Nice-to-have), chỉ ra 3–5 kỹ năng ưu tiên cần học bù.<br>- Với #6: Thừa nhận lỗi tên file/thư mục chỉ cần script Rule là đủ, bài này quá thiên về Rule nên không chọn. | Hoàn thiện Card #4 |
+| **Gom cluster / cây OST** | Cùng Hùng và Huy phân loại 12 candidate; đưa bài #5 của tôi và #10 của Hùng vào Cluster C (*Đọc và chắt lọc tài liệu dài*); bài #4 của tôi và #7 của Truyền vào Cluster D (*Đối chiếu dữ liệu giữa các nguồn*). Cùng nhóm gạch bỏ các giải pháp trá hình trong cây OST. | Cây OST của nhóm neo vào Outcome đo lường được (giảm số phút chuẩn bị trong hành trình) thay vì cắm đầu vào tính năng công nghệ. |
+| **Chọn candidate problem** | Tham gia chấm điểm bảng 2.4; đồng thuận chọn #1 của Huy (Agent hệ sinh thái Vingroup) vì so sánh được trọn vẹn 4 mức (No AI / Rule / Workflow / Agent) trên cùng tình huống; nhận trách nhiệm phụ trách chính CP4. | Nhóm thống nhất 100% mục tiêu, phân chia công việc rạch ròi (Tùng phụ trách CP4, Hùng phụ trách CP5, Huy phụ trách CP6). |
+| **Kiểm chứng / research** | **Phụ trách chính CP4:** Lập Assumption Map (chọn giả định #1 và #2), trực tiếp phỏng vấn 3 người theo The Mom Test, làm poll 5 người, research 3 công cụ (Shortcuts, ViVi, Rabbit R1). | Thu thập phản hồi thực tế quan trọng: 2/3 người kịch liệt phản đối AI tự động trừ tiền đặt xe. Kết quả này buộc nhóm phải đưa cổng xác nhận tiền (Financial Gate - HITL) và Action Card vào quy trình nhóm. |
+| **Quy trình nhóm** | Cùng Hùng và Huy rà soát sơ đồ quy trình; yêu cầu bóc tách rõ tầng Rule (API, tính cước), AI (hiểu ngôn ngữ tự nhiên, lập kế hoạch) và con người (xác nhận tiền). | Quy trình To-be hoàn thiện với sơ đồ Mermaid rõ ràng, có ranh giới và phương án quay về Rule khi AI gặp lỗi. |
+| **Problem Statement** | Đóng góp ý kiến vào trường Success Metric và Boundary; đối chiếu với kết quả khảo sát CP4 để đảm bảo các con số là thật. | Thiết lập Boundary nghiêm ngặt (AI không tự ý trừ tiền, không can thiệp khóa cửa thông minh Smart Lock); Success Metric đo bằng thời gian thực tế giảm từ gần 2 phút xuống dưới 15 giây. |
+| **Mức can thiệp AI** | Tham gia thảo luận ma trận mơ hồ × phức tạp và bảng so sánh 4 mức; phân tích vì sao không chọn mức đơn giản hơn (Rule/Workflow) cho khâu bóc tách câu lệnh đa điều kiện. | Nhóm thống nhất chọn mô hình "Agent có giới hạn": Agent chỉ hiểu câu lệnh và lập kế hoạch, các tác vụ cụ thể vẫn dùng Rule và bắt buộc người duyệt ở khâu thanh toán. |
+| **Quyết định** | Cùng nhóm chấm 4 loại rủi ro (Value, Usability, Feasibility, Viability); đồng thuận đưa ra quyết định **Not Yet** thay vì vội vàng "Go". | Nhóm thống nhất ngưỡng dừng (Kill-switch) sau 2 tuần chạy bản thử: nếu tỷ lệ đúng < 70% hoặc có lần trừ tiền nhầm thì quay về Workflow hoặc Rule. |
 
 ---
 
@@ -160,12 +160,12 @@ HIỆN TẠI — Khoảng 20 phút trước hạn nộp
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| **CP1 Scan** | Gợi ý thêm pain point sinh viên/học viên | Ra ý #7 cài môi trường code xung đột thư viện | Đưa ý viển vông ("AI tự xếp lịch", "tự nộp đơn") | Bỏ 2 ý viển vông, giữ ý môi trường và điền số thật (45–60') |
+| **CP2 Card** | Đóng vai PM hoài nghi phản biện Card #1 | Chỉ ra JD hay phóng đại, sinh viên dễ nản | Xúi làm agent tự sửa CV và nộp thẳng | Giữ boundary: AI chỉ trích xuất kỹ năng, người tự sửa và nộp |
+| **CP4 Research** | Tìm giải pháp tương tự và đối thủ | Gợi ý nhanh Shortcuts, ViVi, Rabbit R1 | Khen Rabbit R1 quá đà, lờ đi lỗi thao tác thực tế | Tự đọc review thật, rút ra bài học dùng Function Calling qua API |
+| **CP5 Quy trình** | Lên khung sơ đồ Mermaid As-is và To-be | Vẽ khung flowchart nhanh, đỡ mất công format | Tự gộp đặt xe và thanh toán thành 1 bước tự động | Tách đôi bước đặt xe và trả tiền, bắt buộc có người xác nhận (HITL) |
+| **CP5–6 Problem Statement** | Lên khung nháp các trường theo rubric | Đủ trường chuẩn, không bị sót | Metric sáo rỗng ("tăng trải nghiệm"), boundary chung chung | Ép số đo thật (~2' xuống <15s, lỗi = 0%), cấm đụng vào Smart Lock |
+| **CP6 Mức can thiệp / quyết định** | So sánh 4 mức và chấm 4 rủi ro | Phân biệt rõ Workflow vs Agent | Khuyên "Go" ngay toàn bộ hệ thống lớn | Chốt chỉ làm pilot nhỏ luồng gọi xe Xanh SM |
 
 ---
 
@@ -175,20 +175,41 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
+Nghe bài của các bạn, tôi thấy bài mình lúc đầu bị hẹp quá, toàn quanh quẩn mấy việc lặt vặt của sinh viên như so JD với check tên file. Huy nhìn được bài toán lớn hơn trong hệ sinh thái Vin. Nhưng bài to quá thì lại dễ bị viển vông nếu không bóc tách được quy trình rõ ràng.
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+Có, lúc đầu cả nhóm đòi làm agent tự động từ A-Z, hô một câu là vừa bật điều hòa vừa tự đặt xe trừ tiền luôn. Đến lúc tôi đi hỏi người thật ở CP4 thì khác: người ta sợ bị trừ tiền nhầm. Lúc đấy nhóm mới tỉnh ra , thêm bước bắt buộc người dùng xác nhận.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
+Có, ban đầu tôi vẫn muốn bám theo ý tưởng làm dự án AI so sánh JD với CV như ý tưởng ban đầu của mình, nhưng rồi các bạn đã cho mình thấy được rằng các dự án trên thị trường hiện tại hoàn toàn đã làm tốt điều đó. Mặc dù tôi có muốn thêm chức năng phỏng vấn AI ảo, thì vẫn là có các ứng dụng tốt hơn, và tệp người dùng thì hạn chế, vì vậy nhóm tôi đã khong chọn ý tưởng đó.
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
+Bất ngờ là người ta không cuồng AI như nhóm tưởng. Hỏi 5 bạn trong lớp thì 2 bạn bảo bấm widget cho nhanh, ngại nói chỗ đông người. Phỏng vấn 3 người thì 2 người nói không cho máy tự trừ tiền. Người dùng cần an tâm hơn là tự động hóa hoàn toàn.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+Có lẽ là khi mà cả nhóm tập trung viết Boundary và Metric
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
+Tôi sẽ đi hỏi người dùng thực tế luôn thay vì giả định. Và phản biện nhóm mạnh hơn ở điểm là phải tập trung vào một luồng chính cơ bản trước ví dụ vừa đặt xe vừa mở điều hòa, thay vì scale bài toán rộng ra ngay từ đầu.
+
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+1. Bài toán của nhóm là người dùng mất gần 2 phút bấm đổi qua lại giữa app Vinhomes và Xanh SM khi đang vội ra ngoài.
+2. Quy trình mới rút từ 6 bước thủ công còn 1 câu lệnh giọng nói để agent bật điều hòa, tra giá xe và đọc lại cho người dùng chốt.
+3. Metric đo bằng thời gian thao tác giảm từ gần 2 phút xuống dưới 15 giây, tỷ lệ đặt sai chuyến bằng 0%.
+4. Boundary là cấm AI can thiệp khóa cửa thông minh và tuyệt đối không tự trừ tiền nếu chưa có xác nhận giọng nói.
+5. Chọn mức Agent vì cần hiểu ngôn ngữ tự nhiên và gọi nhiều API linh hoạt, nhưng khâu thanh toán bắt buộc phải dùng Rule và Human-in-the-loop.
+6. Nhóm quyết định Not Yet, chỉ chạy bản thử 2 tuần trên môi trường giả lập với ngưỡng dừng cụ thể trước khi quyết định làm thật.
 
 ---
 
 ## 7. Tài liệu tham khảo
 
--
+1. Fitzpatrick, R. (2013). *The Mom Test: How to talk to customers & learn if your business is a good idea when everyone is lying to you*.
+2. VinFast Auto. *Trợ lý ảo VinFast (ViVi)*. https://vinfastauto.com/vn_vi/tro-ly-ao-vinfast
+3. Rabbit Inc. *Large Action Model (LAM) Research*. https://www.rabbit.tech/research
