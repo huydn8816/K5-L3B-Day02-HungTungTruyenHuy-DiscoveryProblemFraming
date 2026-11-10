@@ -163,16 +163,16 @@ Quy trình nháp hiện tại:
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Trình bày 3 candidate thuộc lĩnh vực xe điện và hệ sinh thái Vin: #1 bật điều hòa và đặt xe khi đang bận tay, #2 tủ đổi pin V-Green còn pin khi tới nơi, #3 hiểu cảnh báo xe điện và tìm gara. | #1 được nhóm chọn làm candidate chính; #2 và #3 được đưa vào OST cùng nhánh "chuẩn bị và xử lý phát sinh trong hành trình". |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: (1) Với #6 của Tùng, so với kiểm tra tự động bằng GitHub Classroom, công cụ phát hiện thêm lỗi nào? (2) Với #9 của Truyền, so với Onfleet, giảm được bao nhiêu công dò ảnh phiếu thiếu mã chuyến? (3) Với #12 của Hùng, so với VS Code Dev Containers, đưa mã chạy được sớm hơn trong trường hợp nào? | Câu hỏi về #6 góp phần làm rõ các lỗi chính có thể bắt bằng script, nên phạm vi thử AI của #6 hẹp; đây là một lý do nhóm chưa chọn #6 dù điểm cao hơn. |
+| Nhận phản biện | Câu hỏi tôi nhận được: Truyền hỏi so với Siri Shortcuts, agent xử lý tốt hơn thế nào khi người dùng vừa bật điều hòa vừa đổi giờ hoặc điểm đón trong cùng một câu? | Tôi đã sửa gì: xác định lại điểm khác biệt là xử lý yêu cầu **thay đổi** mỗi lần (đổi giờ, đổi điểm đón) chứ không phải "có giọng nói"; thêm ca đổi giờ/điểm đón vào bộ kiểm thử; đưa Shortcuts và nút "Về nhà" (mức Rule) vào bảng so sánh 4 mức. |
+| Gom cluster / cây OST | Đề xuất cluster A "Thao tác rời rạc giữa các ứng dụng" và cluster B "Thiếu thông tin khi đang di chuyển"; viết OST cho 3 candidate #1–#3; tách các ý "agent giọng nói", "nút Về nhà" xuống tầng giải pháp. | OST có outcome đo được (số phút hoàn tất việc chuẩn bị trong hành trình) thay vì gốc là một tính năng. |
+| Chọn candidate problem | Bảo vệ lý do chọn #1 dù #6 có tổng điểm cao hơn: #1 so sánh được đủ 4 mức No AI / Rule / Workflow / Agent trên cùng một tình huống. | Nhóm chọn #1 và ghi rõ lý do trong mục «Vì sao chọn». |
+| Kiểm chứng / research | [Bổ sung: tôi phỏng vấn ai, làm poll hay research công cụ nào] | Kết quả 2/3 người phản đối agent tự đặt xe không xác nhận dẫn tới việc thêm cổng xác nhận tiền (HITL). |
+| Quy trình nhóm | Sửa Job Story vì bản đầu chứa sẵn giải pháp ("nói với tai nghe") và lệch với quy trình (tài xế tự lái không cần gọi xe); vẽ sơ đồ quy trình hiện tại card #1 và quy trình tương lai (`cp2-workflow-card-1.png`, `cp5-workflow-future.png`). | Job Story chỉ còn nêu kết quả mong muốn; quy trình khớp với một actor duy nhất. |
+| Problem Statement | Viết Problem Statement v1 và bảng tiêu chí đánh giá AI (5 tiêu chí, có ngưỡng đạt). | Success Metric có đủ baseline, target và cách đo; Boundary ghi rõ AI không được làm gì và điểm HITL. |
+| Mức can thiệp AI | Điền ma trận, so sánh 4 mức, AI Canvas và 2 câu hỏi Google PAIR. | Nhóm chọn **Agent có giới hạn**: Agent chỉ hiểu và lập kế hoạch, Workflow thực thi, Rule lo mặc định và xác nhận tiền; có điều kiện hạ mức. |
+| Quyết định | Chấm 4 rủi ro, đề xuất **Not Yet** kèm ngưỡng dừng sau 2 tuần chạy bản thử; làm bộ slide thuyết trình 10 trang. | Quyết định có ngưỡng dừng đo được và phương án quay về Workflow/Rule. |
 
 ---
 
@@ -180,35 +180,41 @@ Quy trình nháp hiện tại:
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
-
----
+| CP1 Scan | Liệt kê 10 bài toán xe điện theo 4 lăng kính, có tìm kiếm web. | Đưa nhanh bối cảnh thị trường (trạm đổi pin, Battery Passport, uptime trạm sạc) kèm nguồn. | Gắn nhãn "chưa có" mà chưa rà đối thủ; một số số liệu chưa có nguồn; ban đầu chưa biết Vingroup đã có trợ lý ViVi. | Tự chọn hướng agent giọng nói theo đề bài LifeMate; loại các bài đã có giải pháp hoặc chi phí quá cao; đổi điểm khác biệt thành "nhiều bước, xuyên app". |
+| CP2 Problem Card | Viết Job Story, Problem Card cho top 3, chấm điểm sơ bộ. | Điền đủ các trường của card nhanh, gợi ý phương án không dùng AI. | Job Story chứa sẵn giải pháp ("nói với tai nghe"); quy trình gọi xe không khớp với actor "đang lái xe"; số thời gian chỉ là ước tính. | Tôi phát hiện cả hai lỗi và yêu cầu viết lại: Job Story chỉ nêu kết quả, chọn một actor duy nhất (nhân viên văn phòng tan họp). |
+| CP4 Research | Gợi ý câu hỏi phỏng vấn kiểu Mom Test, các công cụ nên research, vẽ biểu đồ kết quả khảo sát. | Câu hỏi mẫu đúng nguyên tắc "hỏi hành vi đã xảy ra"; chỉ ra câu "nói một câu là tiện" chỉ là ý kiến, không phải bằng chứng. | Không phỏng vấn thay được; link research chưa tự mở kiểm tra. | Nhóm tự phỏng vấn và làm poll; tự mở và kiểm tra link trước khi đưa vào bảng research. |
+| CP5 Quy trình | Viết bảng quy trình hiện tại, quy trình tương lai, chuyển Mermaid thành ảnh. | Tách rõ bước nào Rule, AI, con người; gợi ý phương án quay về. | Ban đầu tách quy trình theo thao tác app, chưa đo thật; không tự phát hiện việc mục 4 của nhóm đã chuyển sang kịch bản nhiều điểm dừng cho đến khi đọc lại cả báo cáo. | [Bổ sung: nhóm chọn kịch bản nào làm chuẩn và sửa ra sao] |
+| CP5–6 Problem Statement | Viết Problem Statement v1, bảng thay đổi v0 → v1, tiêu chí eval. | Đảm bảo metric có baseline, target, cách đo; tiêu chí eval có ngưỡng rõ. | Cột "v0" trong bảng thay đổi được viết theo trí nhớ của cuộc trò chuyện, không khớp với v0 thật ở mục 5. | [Bổ sung: sửa bảng thay đổi cho khớp v0 thật] |
+| CP6 Mức can thiệp / quyết định | So sánh 4 mức, AI Canvas, chấm 4 rủi ro, đề xuất quyết định. | Lập luận "vì sao không chọn mức đơn giản hơn" và điều kiện hạ mức; ngưỡng dừng đo được. | Mức rủi ro là phỏng đoán khi chưa có dữ liệu phỏng vấn; ban đầu nghiêng về Agent toàn phần. | Chốt "Agent có giới hạn" vì đề lab nhấn mạnh đa số bài chỉ cần Rule/Workflow; cập nhật mức Value bằng kết quả phỏng vấn thật; đổi quyết định ở mục 1 thành Not Yet cho khớp mục 8. |
 
 ## 6. Reflection (CP7)
 
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
-
+Điều đầu tiên tôi nhận ra là nhiều nhóm, kể cả nhóm tôi, hay mô tả vấn đề bằng công nghệ (“thiếu chatbot”, “chưa có AI”) thay vì bằng nỗi đau của người dùng. Những nhóm trình bày thuyết phục nhất đều chỉ ra được ai đang khổ, khổ ở bước nào và tốn bao nhiêu thời gian hay tiền. Tôi cũng thấy vài nhóm khác có vấn đề gần giống bài của mình, như “người dùng phải chuyển qua lại nhiều app” hay “người lớn tuổi khó thao tác trên điện thoại”. Nhờ vậy tôi tin hơn rằng vấn đề nhóm chọn là có thật. Nhưng nó cũng buộc nhóm phải trả lời: điều gì làm bài toán trong hệ sinh thái Vingroup khác với một trợ lý ảo chung chung? Cuối cùng, tôi học được cách xếp hạng vấn đề theo ba tiêu chí: tần suất, mức độ đau, và việc có đo được hay không. Trước đó tôi chỉ xếp theo cảm giác “vấn đề nào nghe hay”.
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
-
+Có, và khá rõ. Ngay từ tên đề tài “Agent giọng nói đa bước”, nhóm đã chốt giải pháp (voice + agent) trước khi chứng minh được người dùng thực sự cần nói thay vì chạm. Buổi đầu, nhóm dành phần lớn thời gian bàn về mô hình nhận dạng tiếng Việt và cách agent gọi API giữa VinFast, Xanh SM, Vinhomes, Vinmec, trong khi chưa ai trả lời được câu “hành trình nào của người dùng đang gãy?”. Nhóm chỉ nhận ra khi được hỏi: “Nếu bỏ chữ giọng nói đi, vấn đề còn tồn tại không?”. Sau đó nhóm quay lại vẽ hành trình người dùng cho vài tác vụ đa bước cụ thể, ví dụ đặt Xanh SM đến Vinmec khám rồi thanh toán, hay báo sự cố căn hộ Vinhomes rồi theo dõi xử lý. Nhóm đếm số bước, số lần chuyển app và các điểm người dùng bỏ dở. Giọng nói từ đó trở thành một lựa chọn can thiệp, được giữ lại chỉ trong những bối cảnh rảnh tay hoặc khó thao tác như đang lái xe, người lớn tuổi hay đang bận tay.
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
-
+Có. Ban đầu tôi cho rằng nhóm người dùng chính là người trẻ, rành công nghệ, vì họ dùng nhiều app Vingroup nhất. Một bạn trong nhóm phản biện rằng người trẻ thao tác bằng tay đã rất nhanh, nên giọng nói gần như không tiết kiệm được gì cho họ. Người thật sự gặp khó khi phải đi qua nhiều bước là người lớn tuổi, cư dân dùng app Vinhomes để lo việc gia đình, và tài xế hoặc chủ xe VinFast đang lái xe. Lúc đầu tôi bảo vệ quan điểm của mình vì nhóm trẻ có quy mô lớn hơn. Nhưng khi xem lại dữ liệu phỏng vấn, tôi thấy người trẻ hầu như không than phiền về số bước. Tôi đổi ý và đồng ý thu hẹp phân khúc mục tiêu. Bài học là quy mô người dùng không đồng nghĩa với mức độ đau.
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
-
+Có hai điều làm tôi bất ngờ. Thứ nhất, rào cản lớn nhất không phải là “nhiều bước” mà là niềm tin. Phần lớn người được hỏi sẵn sàng để agent tìm thông tin, đặt lịch hay gọi xe, nhưng rất ngại để agent tự thanh toán hoặc tự xác nhận giao dịch. Họ muốn được nghe lại và xác nhận trước khi tiền bị trừ. Thứ hai, nhiều người không biết các app trong hệ sinh thái có thể liên kết với nhau, ví dụ dùng chung tài khoản hay điểm thưởng. Vì vậy, một phần vấn đề nằm ở chỗ người dùng không biết tính năng đã có, chứ không chỉ do thiếu tính năng. Ngoài ra, người dùng lo agent nghe nhầm giọng địa phương nhiều hơn tôi dự đoán.
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
-
+Khó nhất là viết sao cho không chứa giải pháp mà vẫn đủ cụ thể để đo được. Bản đầu tiên của nhóm là “Người dùng cần một trợ lý giọng nói để thao tác nhiều app Vingroup”. Câu này thực chất là một giải pháp được viết dưới dạng vấn đề. Viết lại thành “Cư dân/khách hàng lớn tuổi hoặc đang bận tay mất trung bình N bước và M lần chuyển app để hoàn thành một tác vụ liên dịch vụ, và K% bỏ dở giữa chừng” đòi hỏi nhóm phải có số liệu nền, phải chọn đúng một vài tác vụ đại diện và phải chấp nhận bỏ bớt phạm vi. Cái khó thứ hai là phải bỏ những ý tưởng mình thích nhưng không thuộc vấn đề cốt lõi.
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
-
+Nếu làm lại, tôi sẽ đi phỏng vấn và quan sát người dùng thực hiện tác vụ trước khi đặt tên đề tài, để tên đề tài không khóa nhóm vào giải pháp giọng nói. Tôi cũng sẽ chọn sớm hơn một hoặc hai hành trình cụ thể thay vì cố bao trọn cả hệ sinh thái. Có hai điểm tôi sẽ phản biện nhóm mạnh hơn. Một là tính khả thi của việc tích hợp: nhóm đang giả định agent gọi được API của mọi app trong hệ sinh thái, trong khi đó là rủi ro lớn về kỹ thuật, dữ liệu và quyền truy cập. Hai là ranh giới tự động hóa: nhóm cần chốt rõ từ đầu những bước nào agent không bao giờ được tự làm, như thanh toán, hủy dịch vụ hay chia sẻ dữ liệu sức khỏe từ Vinmec, thay vì để đến cuối mới bàn.
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
-
+Vấn đề là khách hàng trong hệ sinh thái Vingroup, nhất là người lớn tuổi và người đang bận tay như tài xế VinFast, phải đi qua nhiều bước và nhiều app riêng lẻ cho một nhu cầu liên dịch vụ, nên tốn thời gian và hay bỏ dở. Quy trình hiện tại của họ là mở từng app, đăng nhập, tìm chức năng, nhập lại thông tin rồi xác nhận, ví dụ đặt Xanh SM đến Vinmec rồi thanh toán, hoặc báo sự cố Vinhomes rồi theo dõi tiến độ. Nhóm đo vấn đề bằng ba chỉ số: số bước và thời gian để hoàn thành tác vụ, tỷ lệ hoàn thành hoặc bỏ dở, và tỷ lệ agent hiểu đúng ý định người dùng. Phạm vi được giới hạn ở tiếng Việt, khoảng 2–3 hành trình đại diện và một số app ưu tiên. Ngoài phạm vi là các giao dịch tài chính lớn, việc tự ý chia sẻ dữ liệu y tế và các yêu cầu ngoài hệ sinh thái. AI can thiệp ở mức “đề xuất và thực thi có xác nhận”: agent tự hiểu yêu cầu, lên kế hoạch các bước và điền thông tin, nhưng con người phải xác nhận bằng giọng nói ở mọi bước quan trọng như thanh toán, hủy hay chia sẻ dữ liệu. Quyết định của nhóm là làm một pilot nhỏ cho các hành trình đã chọn. Nhóm chỉ mở rộng nếu metric cải thiện rõ so với baseline và người dùng thể hiện đủ niềm tin. Nếu không, nhóm sẽ quay về cải thiện liên kết giữa các app trước khi thêm giọng nói.
 ---
 
 ## 7. Tài liệu tham khảo
 
--
+- Rob Fitzpatrick, *The Mom Test* (2013).
+- Teresa Torres, *Continuous Discovery Habits* (2021): Opportunity Solution Tree.
+- Jeff Gothelf, Josh Seiden, *Lean UX*: Problem Statement.
+- Google PAIR, *People + AI Guidebook*: https://pair.withgoogle.com/guidebook
+- Anthropic, *Building effective agents*: https://www.anthropic.com/engineering/building-effective-agents
+- Marty Cagan (SVPG), *The Four Big Risks*: https://www.svpg.com/four-big-risks/
+- Apple, *Shortcuts User Guide*: https://support.apple.com/guide/shortcuts/welcome/ios
+- VinFast, *Trợ lý ảo VinFast*: https://vinfastauto.com/vn_vi/tro-ly-ao-vinfast
+- Báo cáo nhóm HungTungTruyenHuy, Day 02 Discovery & Problem Framing (mục 2–8).
